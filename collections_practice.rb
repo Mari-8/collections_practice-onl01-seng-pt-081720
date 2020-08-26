@@ -40,6 +40,8 @@ def find_a(arr)
 end
 
 def sum_array(array)
+  array.inject (0) { |result_memo, object| result_memo + object }
+end
 
 
 
