@@ -33,10 +33,10 @@ def find_a(arr)
   with_a = []
   i = 0 
   while i < arr.length
-     arr.select {|word| word.start_with?("a")}
+    with_a << arr.select {|word| word.start_with?("a")}
      i += 1
   end
-  word
+  
 end
 
 def sum_array(array)
