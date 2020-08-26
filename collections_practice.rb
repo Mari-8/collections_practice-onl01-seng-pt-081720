@@ -33,7 +33,7 @@ def find_a(arr)
   with_a = []
   i = 0 
   while i < arr.length
-     arr.select {|a| 
+     arr.select {|a| starts
      i += 1
   end
   with_a
