@@ -47,7 +47,7 @@ def add_s(array)
   i = 0 
   with_s = 0 
     while i < array.length 
-      array.each.with_index(1) do |word, |
+      array.each.with_index(1) do |word, index|
   
 end
 
