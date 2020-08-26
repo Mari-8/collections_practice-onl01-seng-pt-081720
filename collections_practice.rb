@@ -43,19 +43,12 @@ def sum_array(array)
   array.inject (0) { |result_memo, object| result_memo + object }
 end
 
-def add_s(array)
-  i = 0 
-  with_s = 0 
-    while i < array.length 
-      array.each.with_index(1) do | word, index |
-        if index < 2 
-          with_s << word[index] + "s"
-        elsif index > 2 
-          with_s << word[index] + "s"
-        else 
-          i += 1 
-        end
+def add_s(arr)
+    arr.each_with_index.collect do |element, index|
+      if index == 1
+        element
+      else element[element.length] = "s"
+        element
       end
-  with_s
-end
+    end
 end
