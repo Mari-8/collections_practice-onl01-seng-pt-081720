@@ -36,7 +36,7 @@ def find_a(arr)
     with_a << arr.select {|word| word.start_with?("a")}
      i += 1
   end
-  
+  with_a
 end
 
 def sum_array(array)
