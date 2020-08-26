@@ -48,7 +48,14 @@ def add_s(array)
   with_s = 0 
     while i < array.length 
       array.each.with_index(1) do | word, index |
-  
+        if index < 2 
+          with_s << word[index] + "s"
+        elsif index > 2 
+          with_s << word[index] + "s"
+        else 
+          i += 1 
+        end
+  with_s
 end
 
 
