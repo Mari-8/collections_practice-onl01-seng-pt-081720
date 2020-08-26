@@ -30,15 +30,9 @@ def kesha_maker(arr)
 end
 
 def find_a(arr)
-  with_a = []
-  i = 0 
-  while i < arr.length
-    with_a << arr.select {|word| word.start_with?("a")}
-     i += 1
+  arr.select {|word| word.start_with?("a")}
   end
-  with_a
-end
-
+  
 def sum_array(array)
   array.inject (0) { |result_memo, object| result_memo + object }
 end
